@@ -1,0 +1,120 @@
+@import "./variables.scss";
+
+.header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  margin: 0px;
+  background-color: white;
+  z-index: 9999999;
+
+  @media (max-width: 992px) {
+    padding: 10px;
+  }
+
+  a,
+  button {
+    font-size: 1.2rem;
+    color: $color-text-dark;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 32px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 868px;
+
+  @media (max-width: 992px) {
+    justify-content: start;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-start;
+
+  a {
+    display: inline-block;
+    color: $main-color;
+    font-weight: 700;
+    border: 1px solid $main-color;
+    padding: 1px 5px;
+    font-size: 1.2rem;
+    transition: color 1.2s;
+    &:hover {
+      background-color: $main-color;
+      color: white;
+    }
+  }
+}
+
+.navList {
+  width: 100%;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 993px) {
+    a,
+    button,
+    span {
+      &:hover {
+        color: lighten($color-text-dark, 20%);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    a,
+    button,
+    span {
+      padding: 48px 20px;
+      color: white;
+    }
+    color: white;
+    flex-flow: column nowrap;
+    background-color: #343a40;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 270px;
+    padding-left: 0;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+  }
+}
+
+.closed {
+  @media (max-width: 992px) {
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.darkmode-icon {
+  display: flex;
+  padding-top: 6px;
+  cursor: pointer;
+}

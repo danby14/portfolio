@@ -1,0 +1,34 @@
+[
+  {
+    "title": "PredictTV",
+    "slug": "project-1",
+    "url": "https://www.predictTV.com/",
+    "image": "./images/predictTV.jpg",
+    "description": "Users get to compete against their friends by predicting how long new TV shows will last.",
+    "tags": ["NodeJS", "Express", "React", "MongoDB"]
+  },
+  {
+    "title": "Gimme Five",
+    "slug": "project-2",
+    "url": "https://gimme-five.netlify.app/",
+    "image": "./images/GimmeFive.jpg",
+    "description": "Users can get help with ideas or decisions, by making lists then submiting them to the community for comments and voting.",
+    "tags": ["NodeJS", "Express", "React", "Postgres"]
+  },
+  {
+    "title": "The Initials Game",
+    "slug": "project-3",
+    "url": "https://ig.danby.me/",
+    "image": "./images/TheIG.jpg",
+    "description": "A game where users are given the initals of famous people, then have to guess who those initials belong to.",
+    "tags": ["HTML5", "CSS3", "Javascript"]
+  },
+  {
+    "title": "This Portfolio",
+    "slug": "project-4",
+    "url": "https://danby.me/",
+    "image": "./images/Portfolio.jpg",
+    "description": "A game where users are given the initals of famous people, then have to guess who those initials belong to.",
+    "tags": ["HTML5", "CSS3", "Javascript"]
+  }
+]
