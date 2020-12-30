@@ -10,6 +10,7 @@
 
 body {
   font-size: 1.25rem;
+  background-color: $background-color;
 }
 
 section {
@@ -17,7 +18,7 @@ section {
   padding-top: 5vh;
 
   > h2 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.3rem;
     color: $main-color;
   }
 
@@ -33,8 +34,9 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1.5rem auto;
+  width: 900px;
   max-width: 90%;
-  width: 57ch;
+  // width: 57ch;
 }
 
 .highlight {
@@ -46,7 +48,7 @@ section {
 
 .divider {
   height: 0px;
-  border-top: 2px solid #ff2222;
+  border-top: 2px solid $seperator;
   margin: 12px auto 16px;
   width: 41%;
 }
@@ -80,44 +82,83 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 1.1rem;
-  // background: lightgray;
+  color: $color-text-darker;
 }
 
 .project-preview {
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
   width: 100%;
+  img {
+    border-radius: 3%;
+  }
+  @media (min-width: 600px) {
+    img {
+      border-radius: 25% 10%;
+      // border-radius: 10%;
+      transition: border-radius 0.3s !important;
+      &:hover {
+        border-radius: 3%;
+      }
+    }
+  }
+
   h3 {
-    font-size: 1.25rem;
-    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    // text-decoration: underline;
     a {
-      color: #222;
+      color: $color-text-dark;
       text-decoration: none;
     }
   }
   p {
-    margin-top: 0.3rem;
+    margin: 0.8rem 0.7rem 0 0.7rem;
+    text-align: justify;
+    // text-justify: newspaper;
   }
 }
 
 @media (min-width: 600px) {
   .project-preview {
     flex: 1 50%;
-    max-width: calc(50% - 0.5rem);
+    max-width: calc(50% - 1.25rem);
   }
 }
 
 .project {
   width: 100%;
+  color: $color-text-dark;
 
   h1 {
     margin-bottom: 1rem;
   }
-
+  a {
+    color: $main-color;
+    text-decoration: none;
+    &:hover {
+      opacity: 80%;
+    }
+  }
   h3,
   p {
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
   ul {
     margin-top: 0.5rem;
+    list-style-position: inside;
+    font-size: 1rem;
   }
+
+  img {
+    border-radius: 1%;
+    padding-bottom: 1rem;
+  }
+}
+
+footer {
+  color: $color-text-darker;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
 }

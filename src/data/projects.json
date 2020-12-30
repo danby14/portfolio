@@ -4,7 +4,7 @@
     "slug": "project-1",
     "url": "https://www.predictTV.com/",
     "image": "./images/predictTV.jpg",
-    "description": "Users get to compete against their friends by predicting how long new TV shows will last.",
+    "description": "A competition between friends to see who is better at predicting how long new TV shows will last.",
     "tags": ["NodeJS", "Express", "React", "MongoDB"]
   },
   {
