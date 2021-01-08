@@ -1,0 +1,16 @@
+@import "mixins";
+
+@mixin transition-theme {
+    transition: background-color 1000ms !important;
+    transition-delay: 0s !important;
+}
+// :root.light {
+.light {
+  @include spread-map($theme-map-light);
+  @include transition-theme;
+}
+// :root.light {
+.dark {
+  @include spread-map($theme-map-dark);
+  @include transition-theme;
+}

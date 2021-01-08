@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "variables";
 
 .header {
   position: sticky;
@@ -7,7 +7,6 @@
   justify-content: space-around;
   padding: 8px;
   margin: 0px;
-  background-color: $background-color;
   z-index: 9999999;
 
   @media (max-width: 992px) {
@@ -17,7 +16,7 @@
   a,
   button {
     font-size: 1.2rem;
-    color: $color-text-dark;
+    color: var($--color-text-dark);
     font-weight: 600;
     text-decoration: none;
     padding: 8px 32px;
@@ -52,14 +51,14 @@ nav {
 
   a {
     display: inline-block;
-    color: $main-color;
+    color: var($--main-color);
     font-weight: 700;
-    border: 1px solid $main-color;
+    border: 1px solid var($--main-color);
     padding: 1px 5px;
     font-size: 1.2rem;
     transition: color 1.2s;
     &:hover {
-      background-color: $main-color;
+      background-color: var($--main-color);
       color: white;
     }
   }
@@ -77,7 +76,8 @@ nav {
     button,
     span {
       &:hover {
-        color: lighten($color-text-dark, 20%);
+        // color: lighten($color-text-dark, 20%);
+        color: var($--color-text-dark)
       }
     }
   }
@@ -117,4 +117,5 @@ nav {
   display: flex;
   padding-top: 6px;
   cursor: pointer;
+  color: var($--color-text-dark)
 }

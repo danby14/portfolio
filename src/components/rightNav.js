@@ -1,4 +1,5 @@
 import React from "react"
+import { myContext } from "../../provider"
 import { Link } from "gatsby"
 import { FaMoon } from "react-icons/fa"
 import scrollTo from "gatsby-plugin-smoothscroll"
@@ -48,9 +49,18 @@ const RightNav = ({ open, setOpen }) => {
           Blog
         </Link>
       </span>
-      <span className="darkmode-icon">
-        <FaMoon onClick={openClose} />
-      </span>
+      <myContext.Consumer>
+        {(context) => (
+          <span className="darkmode-icon">
+            <FaMoon
+              onClick={() => {
+                context.changeTheme()
+                openClose()
+              }}
+            />
+          </span>
+        )}
+      </myContext.Consumer>
     </div>
   )
 }
