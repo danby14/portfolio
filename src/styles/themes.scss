@@ -1,8 +1,8 @@
 @import "mixins";
 
 @mixin transition-theme {
-    transition: background-color 1000ms !important;
-    transition-delay: 0s !important;
+  transition: background-color 1000ms !important;
+  transition-delay: 0s !important;
 }
 // :root.light {
 .light {

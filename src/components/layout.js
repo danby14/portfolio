@@ -11,11 +11,9 @@ const Layout = (props) => {
     <myContext.Consumer>
       {(context) => (
         <div className={context.isDark ? "container dark" : "container light"}>
-        <React.Fragment>
           <Header />
           <main className="content">{props.children}</main>
           <Footer />
-        </React.Fragment>
         </div>
       )}
     </myContext.Consumer>
