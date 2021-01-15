@@ -4,7 +4,12 @@ $--color-text-dark: --color-text-dark;
 $--color-text-darker: --color-text-darker;
 $--color-text-light: --color-text-light;
 $--seperator: --seperator;
-$--theme-test: --theme-test;
+$--shadow: --shadow;
+$--card-main: --card-main;
+
+$bp-sm: 600px;
+$bp-md: 800px;
+$bp-lg: 992px;
 
 $theme-map-light: (
   $--background-color: #ffffff,
@@ -13,6 +18,8 @@ $theme-map-light: (
   $--color-text-darker: #222,
   $--color-text-light: #eee,
   $--seperator: #ff2222,
+  $--shadow: rgba(0, 0, 0, 0.1),
+  $--card-main: rgb(10, 10, 10),
 );
 
 $theme-map-dark: (
@@ -22,11 +29,6 @@ $theme-map-dark: (
   $--color-text-darker: rgb(149, 145, 145),
   $--color-text-light: rgb(238, 224, 224),
   $--seperator: #ff2222,
+  $--shadow: rgba(160, 160, 160, 0.1),
+  $--card-main: whitesmoke,
 );
-
-$background-color: #ffffff;
-$main-color: #383870;
-$color-text-dark: #333;
-$color-text-darker: #222;
-$color-text-light: #eee;
-$seperator: #ff2222;

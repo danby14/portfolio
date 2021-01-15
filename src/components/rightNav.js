@@ -2,17 +2,22 @@ import React from "react"
 import { myContext } from "../../provider"
 import { Link } from "gatsby"
 import { FaMoon } from "react-icons/fa"
-import scrollTo from "gatsby-plugin-smoothscroll"
+import { CgSun } from "react-icons/cg"
+import { navigate } from "gatsby"
 
 const RightNav = ({ open, setOpen }) => {
   const openClose = () => {
     setOpen(!open)
   }
+  const handleClick = (context) => {
+    context.changeTheme()
+    openClose()
+  }
   return (
     <div className={open ? "navList" : "navList closed"}>
       <button
-        onClick={() => {
-          scrollTo("#projects")
+        onClick={(e) => {
+          navigate("/#projects")
           openClose()
         }}
       >
@@ -20,7 +25,7 @@ const RightNav = ({ open, setOpen }) => {
       </button>
       <button
         onClick={() => {
-          scrollTo("#skills")
+          navigate("/#skills")
           openClose()
         }}
       >
@@ -28,22 +33,13 @@ const RightNav = ({ open, setOpen }) => {
       </button>
       <button
         onClick={() => {
-          scrollTo("#contact")
+          navigate("/#contact")
           openClose()
         }}
       >
         Contact
       </button>
 
-      {/* <span>
-            <Link
-              className="navItem"
-              activeClassName="activeNavItem"
-              to="/about"
-            >
-              About
-            </Link>
-          </span> */}
       <span>
         <Link className="navItem" activeClassName="activeNavItem" to="/blog">
           Blog
@@ -51,13 +47,12 @@ const RightNav = ({ open, setOpen }) => {
       </span>
       <myContext.Consumer>
         {(context) => (
-          <span className="darkmode-icon">
-            <FaMoon
-              onClick={() => {
-                context.changeTheme()
-                openClose()
-              }}
-            />
+          <span className={`theme-icon ${context.isDark ? "" : "spin"}`}>
+            {context.isDark ? (
+              <FaMoon onClick={() => handleClick(context)} />
+            ) : (
+              <CgSun onClick={() => handleClick(context)} />
+            )}
           </span>
         )}
       </myContext.Consumer>

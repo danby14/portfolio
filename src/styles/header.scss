@@ -7,10 +7,10 @@
   justify-content: space-around;
   padding: 8px;
   margin: 0px;
-  z-index: 9999999;
-  background: inherit;
+  z-index: 8675310;
+  background-color: inherit;
 
-  @media (max-width: 992px) {
+  @media (max-width: $bp-lg) {
     padding: 10px;
   }
 
@@ -39,7 +39,7 @@ nav {
   width: 100%;
   max-width: 868px;
 
-  @media (max-width: 992px) {
+  @media (max-width: $bp-lg) {
     justify-content: start;
   }
 }
@@ -83,7 +83,7 @@ nav {
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: $bp-lg) {
     a,
     button,
     span {
@@ -108,15 +108,19 @@ nav {
 }
 
 .closed {
-  @media (max-width: 992px) {
+  @media (max-width: $bp-lg) {
     transform: translateX(100%);
     transition: transform 0.2s ease-in-out;
   }
 }
 
-.darkmode-icon {
+.theme-icon {
   display: flex;
   padding-top: 6px;
   cursor: pointer;
   color: var($--color-text-dark);
+  transition: transform 1.1s ease-in-out;
+}
+.theme-icon.spin {
+  transform: rotateY(-180deg);
 }

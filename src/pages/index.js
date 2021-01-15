@@ -58,7 +58,7 @@ const IndexPage = () => {
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <div className="project-previews-container">
+        <ul className="project-previews-container">
           {projects.map(({ node: project }) => {
             const title = project.title
             const description = project.description
@@ -75,7 +75,7 @@ const IndexPage = () => {
               />
             )
           })}
-        </div>
+        </ul>
       </section>
       <section id="skills">
         <h2>Skills</h2>

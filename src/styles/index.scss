@@ -8,6 +8,11 @@
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.25rem;
 }
@@ -27,7 +32,7 @@ section {
     color: var($--main-color);
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: $bp-lg) {
     min-height: 94vh;
     padding-top: 6vh;
   }
@@ -41,12 +46,11 @@ section {
   margin: 1.5rem auto;
   width: 900px;
   max-width: 90%;
-  // width: 57ch;
 }
 
 .highlight {
   background-color: var($--main-color);
-  color: $color-text-light;
+  color: var($--color-text-light);
   padding: 1px 5px;
   line-height: 2.9rem;
 }
@@ -81,55 +85,6 @@ section {
 
 // #skills {
 // }
-
-.project-previews-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-size: 1.1rem;
-  color: var($--color-text-darker);
-}
-
-.project-preview {
-  margin-bottom: 1.8rem;
-  width: 100%;
-  img {
-    border-radius: 3%;
-  }
-  @media (min-width: 600px) {
-    img {
-      border-radius: 25% 10%;
-      // border-radius: 10%;
-      transition: border-radius 0.3s !important;
-      &:hover {
-        border-radius: 3%;
-      }
-    }
-  }
-
-  h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.7rem;
-    text-align: center;
-    // text-decoration: underline;
-    a {
-      color: var($--color-text-dark);
-      text-decoration: none;
-    }
-  }
-  p {
-    margin: 0.8rem 0.7rem 0 0.7rem;
-    text-align: justify;
-    // text-justify: newspaper;
-  }
-}
-
-@media (min-width: 600px) {
-  .project-preview {
-    flex: 1 50%;
-    max-width: calc(50% - 1.25rem);
-  }
-}
 
 .project {
   width: 100%;

@@ -4,7 +4,7 @@
     "slug": "project-1",
     "url": "https://www.predictTV.com/",
     "image": "./images/predictTV.jpg",
-    "description": "A competition between friends to see who is better at predicting how long new TV shows will last.",
+    "description": "Users join leagues and invite friends/foes to see who can best predict how long new TV shows will last.",
     "tags": ["NodeJS", "Express", "React", "MongoDB"]
   },
   {
@@ -20,11 +20,11 @@
     "slug": "project-3",
     "url": "https://ig.danby.me/",
     "image": "./images/TheIG.jpg",
-    "description": "A game where users are given the initals of famous people, then have to guess who those initials belong to.",
+    "description": "A game where users are given the initals of a famous person, then have to guess who those initials belong to.",
     "tags": ["HTML5", "CSS3", "Javascript"]
   },
   {
-    "title": "This Portfolio",
+    "title": "My Portfolio",
     "slug": "project-4",
     "url": "https://danby.me/",
     "image": "./images/Portfolio.jpg",

@@ -13,7 +13,7 @@
   justify-content: space-around;
   flex-flow: column nowrap;
 
-  @media (min-width: 992px) {
+  @media (min-width: $bp-lg) {
     display: none;
   }
 }
@@ -37,7 +37,7 @@
 }
 
 .bl-closed {
-  background-color: $main-color;
+  background-color: var($--main-color);
   transform-origin: 1px;
   transition: all 0.3s linear;
   &:nth-child(1) {

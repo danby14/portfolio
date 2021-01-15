@@ -11,6 +11,5 @@ module.exports = {
     },
     "gatsby-transformer-json",
     "gatsby-plugin-sass",
-    "gatsby-plugin-smoothscroll",
   ],
 }
