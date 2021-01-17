@@ -1,6 +1,5 @@
 import React from "react"
 import { myContext } from "../../provider"
-import { Link } from "gatsby"
 import { FaMoon } from "react-icons/fa"
 import { CgSun } from "react-icons/cg"
 import { navigate } from "gatsby"
@@ -16,12 +15,12 @@ const RightNav = ({ open, setOpen }) => {
   return (
     <div className={open ? "navList" : "navList closed"}>
       <button
-        onClick={(e) => {
-          navigate("/#projects")
+        onClick={() => {
+          navigate("/#about")
           openClose()
         }}
       >
-        Projects
+        About
       </button>
       <button
         onClick={() => {
@@ -32,6 +31,14 @@ const RightNav = ({ open, setOpen }) => {
         Skills
       </button>
       <button
+        onClick={(e) => {
+          navigate("/#projects")
+          openClose()
+        }}
+      >
+        Projects
+      </button>
+      <button
         onClick={() => {
           navigate("/#contact")
           openClose()
@@ -40,11 +47,6 @@ const RightNav = ({ open, setOpen }) => {
         Contact
       </button>
 
-      <span>
-        <Link className="navItem" activeClassName="activeNavItem" to="/blog">
-          Blog
-        </Link>
-      </span>
       <myContext.Consumer>
         {(context) => (
           <span className={`theme-icon ${context.isDark ? "" : "spin"}`}>

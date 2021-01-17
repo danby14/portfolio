@@ -25,6 +25,7 @@ body {
 
 section {
   min-height: 95vh;
+  // min-height: 55vh;
   padding-top: 5vh;
 
   > h2 {
@@ -63,6 +64,7 @@ section {
 }
 
 #intro {
+  min-height: 95vh;
   text-align: center;
   padding-top: 0;
   display: flex;

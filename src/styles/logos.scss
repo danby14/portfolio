@@ -1,0 +1,26 @@
+@import "themes.scss";
+
+.all-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+}
+.icon-container {
+  border: 1px solid var($--color-text-darker);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 120px;
+  padding: 8px 6px;
+  margin: 5px;
+}
+.icon-img-container {
+  width: 1.8rem;
+  padding-right: 3px;
+}
+.icon-txt-container {
+  font-size: 0.7em;
+}
