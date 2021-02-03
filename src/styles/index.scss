@@ -24,9 +24,12 @@ body {
 }
 
 section {
-  min-height: 95vh;
-  // min-height: 55vh;
   padding-top: 5vh;
+
+  &:not(:first-child) {
+    padding-top: 6vh;
+    padding-bottom: 1vh;
+  }
 
   > h2 {
     padding-bottom: 1.3rem;
@@ -34,8 +37,23 @@ section {
   }
 
   @media (max-width: $bp-lg) {
-    min-height: 94vh;
-    padding-top: 6vh;
+    padding-top: 5vh;
+  }
+  p {
+    text-align: justify;
+  }
+
+  .section-img-container {
+    margin: 0 auto;
+    max-width: 45%;
+    filter: var($--filter);
+    &.top {
+      margin-top: -0.5rem;
+      padding-bottom: 1rem;
+    }
+    &.bottom {
+      padding-top: 2.5rem;
+    }
   }
 }
 

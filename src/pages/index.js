@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import ProjectPreview from "../components/project-preview"
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa"
 import Logos from "../components/logos"
+import { Blob } from "../assets/blob"
+import SectionImg from "../components/section-img"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -58,27 +60,34 @@ const IndexPage = () => {
         </div>
       </section>
       <section id="about">
-        <h2>About</h2>
+        <Blob>About</Blob>
+
         <p>
-          Hello! My name is Dan, and I am a self-taught web developer from
-          Chicago, IL.
+          Hi! My name is Dan, and I am a self-taught web developer from Chicago,
+          IL.
         </p>
         <br />
         <p>
-          For the better part of my life I have been asking myself what I
-          learned today before I go to sleep every night. Because a day without
+          For the better part of my life I have asked myself what I have learned
+          today before I go to bed every night. Because to me, a day without
           learning, is a day without improving.
         </p>
         <br />
+        <SectionImg
+          imgName="LightBulbs.png"
+          alt="Light Bulbs via https://absurd.design/"
+          top
+        />
+
         <p>
           So, when I rediscovered the wide world of web development a few years
-          back, it is no wonder why it has been an important part of my life
-          ever since. And am looking forward to the endless treasure trove of
-          challenges and knowledge it has to offer me in the future.
+          back, there is no wonder why it has since become a big part of my
+          life. And I am looking forward to the endless treasure trove of
+          knowledge it has for me to unlock.
         </p>
       </section>
       <section id="skills">
-        <h2>Skills</h2>
+        <Blob>Skills</Blob>
         <Logos
           logos={[
             "git",
@@ -93,9 +102,18 @@ const IndexPage = () => {
             "MongoDB",
           ]}
         />
+        <SectionImg
+          imgName="Learning.png"
+          alt="Big Floating Head via https://absurd.design/"
+          // top
+        />
+        {/* <SectionImg
+          imgName="LightBulbs.png"
+          alt="Light Bulbs via https://absurd.design/"
+        /> */}
       </section>
       <section id="projects">
-        <h2>Projects</h2>
+        <Blob>Projects</Blob>
         <ul className="project-previews-container">
           {projects.map(({ node: project }) => {
             const title = project.title
@@ -117,7 +135,8 @@ const IndexPage = () => {
       </section>
 
       <section id="contact">
-        <h2>Contact</h2>
+        {/* <h2 className="section-name">Contact</h2> */}
+        <Blob>Contact</Blob>
         <p>Form Goes Here.</p>
       </section>
     </Layout>

@@ -1,0 +1,31 @@
+@import "./_variables.scss";
+
+.svg-container {
+  position: relative;
+  padding-bottom: 2vh;
+  max-width: 350px;
+  margin: 0 auto;
+  svg {
+    fill: var($--section-title);
+  }
+
+  @media (max-width: $bp-lg) {
+    max-width: 300px;
+  }
+
+  .blob-title {
+    color: #2f81ce;
+    text-shadow: 2px 2px 8px var($--shadow);
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5em;
+
+    @media (max-width: $bp-lg) {
+      top: 30%;
+      font-size: 3rem;
+    }
+  }
+}

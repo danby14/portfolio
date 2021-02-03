@@ -6,6 +6,8 @@ $--color-text-light: --color-text-light;
 $--seperator: --seperator;
 $--shadow: --shadow;
 $--card-main: --card-main;
+$--section-title: --section-title;
+$--filter: --filter;
 
 $bp-sm: 600px;
 $bp-md: 800px;
@@ -20,6 +22,8 @@ $theme-map-light: (
   $--seperator: #ff2222,
   $--shadow: rgba(0, 0, 0, 0.1),
   $--card-main: rgb(10, 10, 10),
+  $--section-title: #bac6d6,
+  $--filter: none,
 );
 
 $theme-map-dark: (
@@ -31,4 +35,6 @@ $theme-map-dark: (
   $--seperator: #ff2222,
   $--shadow: rgba(160, 160, 160, 0.1),
   $--card-main: whitesmoke,
+  $--section-title: currentColor,
+  $--filter: contrast(0),
 );
