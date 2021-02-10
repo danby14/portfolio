@@ -11,7 +11,7 @@ const Layout = (props) => {
     <myContext.Consumer>
       {(context) => (
         <div className={context.isDark ? "container dark" : "container light"}>
-          <Bubbles />
+          {/* <Bubbles /> */}
           <Header />
           <main className="content">{props.children}</main>
           <Footer />

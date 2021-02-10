@@ -2,7 +2,7 @@
 
 .svg-container {
   position: relative;
-  padding-bottom: 2vh;
+  padding-bottom: 2.5vh;
   max-width: 350px;
   margin: 0 auto;
   svg {
@@ -10,7 +10,7 @@
   }
 
   @media (max-width: $bp-lg) {
-    max-width: 300px;
+    max-width: 260px;
   }
 
   .blob-title {
@@ -18,7 +18,7 @@
     text-shadow: 2px 2px 8px var($--shadow);
 
     position: absolute;
-    top: 25%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3.5em;

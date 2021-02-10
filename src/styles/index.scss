@@ -18,6 +18,7 @@ body {
 }
 
 .container {
+  position: relative;
   min-height: 100vh;
   color: var($--color-text-dark);
   background-color: var($--background-color);
@@ -28,7 +29,7 @@ section {
 
   &:not(:first-child) {
     padding-top: 6vh;
-    padding-bottom: 1vh;
+    margin-bottom: 1vh;
   }
 
   > h2 {
@@ -39,6 +40,7 @@ section {
   @media (max-width: $bp-lg) {
     padding-top: 5vh;
   }
+
   p {
     text-align: justify;
   }
@@ -60,9 +62,10 @@ section {
 .content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
   margin: 1.5rem auto;
+  // margin: 0 auto;
   width: 900px;
   max-width: 90%;
 }
@@ -136,9 +139,18 @@ section {
   }
 }
 
-footer {
-  color: var($--color-text-darker);
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 0.5rem 0;
   display: flex;
   justify-content: center;
-  padding: 0.5rem 0;
+  color: var($--color-text-darker);
 }

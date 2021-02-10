@@ -68,8 +68,8 @@ const IndexPage = () => {
         </p>
         <br />
         <p>
-          For the better part of my life I have asked myself what I have learned
-          today before I go to bed every night. Because to me, a day without
+          For the better part of my life I have asked myself what I learned
+          today before I go to sleep at night. Because to me, a day without
           learning, is a day without improving.
         </p>
         <br />
@@ -81,9 +81,9 @@ const IndexPage = () => {
 
         <p>
           So, when I rediscovered the wide world of web development a few years
-          back, there is no wonder why it has since become a big part of my
-          life. And I am looking forward to the endless treasure trove of
-          knowledge it has for me to unlock.
+          back, there is no wonder why it has since become an important part of
+          my life. And I am looking forward to the endless treasure trove of
+          knowledge it still has for me to unlock.
         </p>
       </section>
       <section id="skills">
@@ -105,12 +105,7 @@ const IndexPage = () => {
         <SectionImg
           imgName="Learning.png"
           alt="Big Floating Head via https://absurd.design/"
-          // top
         />
-        {/* <SectionImg
-          imgName="LightBulbs.png"
-          alt="Light Bulbs via https://absurd.design/"
-        /> */}
       </section>
       <section id="projects">
         <Blob>Projects</Blob>
@@ -135,9 +130,18 @@ const IndexPage = () => {
       </section>
 
       <section id="contact">
-        {/* <h2 className="section-name">Contact</h2> */}
         <Blob>Contact</Blob>
-        <p>Form Goes Here.</p>
+        <form action="submit" className="contact-form">
+          <label htmlFor="name">Name</label>
+          <input type="text" />
+          <label htmlFor="email">Email</label>
+          <input type="email" />
+        </form>
+
+        {/* <SectionImg
+          imgName="Learning.png"
+          alt="Big Floating Head via https://absurd.design/"
+        /> */}
       </section>
     </Layout>
   )
