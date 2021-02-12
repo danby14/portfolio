@@ -3,11 +3,11 @@ $--main-color: --main-color;
 $--color-text-dark: --color-text-dark;
 $--color-text-darker: --color-text-darker;
 $--color-text-light: --color-text-light;
-$--seperator: --seperator;
 $--shadow: --shadow;
 $--card-main: --card-main;
 $--section-title: --section-title;
-$--filter: --filter;
+$--section-image: --section-image;
+$--background-image-brightness: --background-image-brightness;
 
 $bp-sm: 600px;
 $bp-md: 800px;
@@ -19,11 +19,11 @@ $theme-map-light: (
   $--color-text-dark: #333,
   $--color-text-darker: #222,
   $--color-text-light: #eee,
-  $--seperator: #ff2222,
   $--shadow: rgba(0, 0, 0, 0.1),
   $--card-main: rgb(10, 10, 10),
-  $--section-title: #ced3da,
-  $--filter: none,
+  $--section-title: #e7d9ea,
+  $--section-image: brightness(0.9) sepia(0.5) hue-rotate(180deg) saturate(5),
+  $--background-image-brightness: 0.9,
 );
 
 $theme-map-dark: (
@@ -32,9 +32,9 @@ $theme-map-dark: (
   $--color-text-dark: rgb(190, 180, 180),
   $--color-text-darker: rgb(149, 145, 145),
   $--color-text-light: rgb(238, 224, 224),
-  $--seperator: #ff2222,
   $--shadow: rgba(160, 160, 160, 0.1),
   $--card-main: whitesmoke,
-  $--section-title: currentColor,
-  $--filter: contrast(0),
+  $--section-title: #b8a1db,
+  $--section-image: brightness(2.5) sepia(0.6) hue-rotate(185deg) saturate(3),
+  $--background-image-brightness: 0.1,
 );

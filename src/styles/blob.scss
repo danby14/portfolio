@@ -3,25 +3,25 @@
 .svg-container {
   position: relative;
   padding-bottom: 2.5vh;
-  max-width: 350px;
+  max-width: 260px;
   margin: 0 auto;
   svg {
     fill: var($--section-title);
   }
 
   @media (max-width: $bp-lg) {
-    max-width: 260px;
+    max-width: 230px;
   }
 
   .blob-title {
-    color: #2f81ce;
+    color: var($--main-color);
     text-shadow: 2px 2px 8px var($--shadow);
 
     position: absolute;
-    top: 34%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.5em;
+    font-size: 2.6em;
 
     @media (max-width: $bp-lg) {
       top: 30%;

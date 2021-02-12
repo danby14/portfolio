@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 95%;
+  width: 100%;
 }
 .icon-container {
   border: 1px solid var($--color-text-darker);
@@ -23,4 +23,8 @@
 }
 .icon-txt-container {
   font-size: 0.7em;
+}
+.small {
+  border: none;
+  width: 55px;
 }

@@ -1,13 +1,15 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Image from "gatsby-image"
+import { FaGithub, FaGlobe } from "react-icons/fa"
+import Logos from "./logos"
 import "../styles/project-preview.scss"
 
-const ProjectPreview2 = ({ slug, imageData, title, description }) => (
+const ProjectPreview2 = ({ project, slug, imageData, login = false }) => (
   <li className="project-card">
     <Image
       fluid={imageData}
-      alt={title}
+      alt={project.title}
       className="img"
       style={{
         position: "absolute",
@@ -19,21 +21,35 @@ const ProjectPreview2 = ({ slug, imageData, title, description }) => (
     />
     <div className="main-link-container">
       <div className="content">
-        <button className="btn">More Details</button>
+        <Link to={`/${slug}`}>Deeper Dive</Link>
       </div>
     </div>
     <div className="informations-container">
-      <h2 className="title">{title}</h2>
-      <p className="sub-title">MERN</p>
+      <h2 className="title">{project.title}</h2>
+      <p className="sub-title">
+        <Logos logos={project.tags} small />
+      </p>
       <div className="more-information">
-        <p className="about">{description}</p>
+        <p className="about">{project.description}</p>
         <div className="info-and-date-container">
-          <div className="box info">
+          <a href={project.git} target="blank" className="box code">
+            <span>
+              <FaGithub size="1.4em" />
+            </span>
             <p>Code</p>
-          </div>
-          <div className="box date">
-            <p>Visit</p>
-          </div>
+          </a>
+          <a href={project.url} target="blank" className="box visit">
+            <span>
+              <FaGlobe size="1.3em" />
+            </span>
+            {login ? (
+              <p>
+                "{login.user}, {login.pass}"
+              </p>
+            ) : (
+              <p>Visit</p>
+            )}
+          </a>
         </div>
       </div>
     </div>

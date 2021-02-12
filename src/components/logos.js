@@ -7,6 +7,7 @@ import {
   SassIcon,
   JavascriptIcon,
   NodeIcon,
+  ExpressIcon,
   ReactIcon,
   GatsbyIcon,
   PostgresIcon,
@@ -15,7 +16,7 @@ import {
 
 import "../styles/logos.scss"
 
-const Logos = ({ logos }) => {
+const Logos = ({ logos, small }) => {
   const icons = {
     git: <GitIcon />,
     HTML5: <Html5Icon />,
@@ -23,6 +24,7 @@ const Logos = ({ logos }) => {
     SASS: <SassIcon />,
     JavaScript: <JavascriptIcon />,
     Node: <NodeIcon />,
+    Express: <ExpressIcon />,
     React: <ReactIcon />,
     Gatsby: <GatsbyIcon />,
     PostgreSQL: <PostgresIcon />,
@@ -31,7 +33,7 @@ const Logos = ({ logos }) => {
   return (
     <div className="all-logos-container">
       {logos.map((logo, idx) => (
-        <div key={idx} className="icon-container">
+        <div key={idx} className={`icon-container ${small ? "small" : ""}`}>
           <div className="icon-img-container">{icons[`${logo}`]}</div>
           <div className="icon-txt-container">{logo}</div>
         </div>

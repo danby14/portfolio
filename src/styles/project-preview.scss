@@ -95,9 +95,9 @@ $orange: #ec992c;
 
         transition: 0.3s;
 
-        .btn {
+        .btn,
+        a {
           border: 3px solid white;
-          // padding: 10px;
           padding: 10px 15px;
 
           background: none;
@@ -107,6 +107,7 @@ $orange: #ec992c;
           font-size: 1.3rem;
           color: white;
           border-radius: 5%;
+          text-decoration: none;
 
           cursor: pointer;
 
@@ -178,15 +179,18 @@ $orange: #ec992c;
 
             font-weight: bold;
             font-size: 0.9rem;
+            text-decoration: none;
 
             .icon {
               margin-bottom: 5px;
             }
 
-            &.info {
+            &.code {
               color: $orange;
-
               margin-right: 10px;
+            }
+            &.visit {
+              color: $bluegrey;
             }
           }
         }
@@ -211,24 +215,6 @@ $orange: #ec992c;
     .project-card {
       @include cardsOpen();
     }
-  }
-}
-
-.credits {
-  display: table;
-  background: $blue;
-  color: white;
-  line-height: 25px;
-
-  margin: 10px auto;
-  padding: 20px;
-
-  @include radius(10px);
-
-  text-align: center;
-
-  a {
-    color: $blue2;
   }
 }
 

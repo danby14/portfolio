@@ -11,5 +11,11 @@ module.exports = {
     },
     "gatsby-transformer-json",
     "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-svgr",
+      options: {
+        include: /assets/,
+      },
+    },
   ],
 }

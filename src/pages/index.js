@@ -15,7 +15,12 @@ const IndexPage = () => {
           node {
             title
             slug
+            git
             url
+            guest {
+              user
+              pass
+            }
             description
             tags
             image {
@@ -61,7 +66,6 @@ const IndexPage = () => {
       </section>
       <section id="about">
         <Blob>About</Blob>
-
         <p>
           Hi! My name is Dan, and I am a self-taught web developer from Chicago,
           IL.
@@ -96,6 +100,7 @@ const IndexPage = () => {
             "SASS",
             "JavaScript",
             "Node",
+            "Express",
             "React",
             "Gatsby",
             "PostgreSQL",
@@ -111,18 +116,17 @@ const IndexPage = () => {
         <Blob>Projects</Blob>
         <ul className="project-previews-container">
           {projects.map(({ node: project }) => {
-            const title = project.title
-            const description = project.description
             const imageData = project.image.childImageSharp.fluid
             const slug = project.slug
+            const login = project.guest
 
             return (
               <ProjectPreview
-                title={title}
-                description={description}
                 imageData={imageData}
                 slug={slug}
-                key={slug}
+                project={project}
+                login={login}
+                key={project.slug}
               />
             )
           })}
@@ -137,11 +141,6 @@ const IndexPage = () => {
           <label htmlFor="email">Email</label>
           <input type="email" />
         </form>
-
-        {/* <SectionImg
-          imgName="Learning.png"
-          alt="Big Floating Head via https://absurd.design/"
-        /> */}
       </section>
     </Layout>
   )

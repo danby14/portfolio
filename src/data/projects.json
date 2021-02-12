@@ -3,32 +3,38 @@
     "title": "PredictTV",
     "slug": "project-1",
     "url": "https://www.predictTV.com/",
+    "guest": { "user": "Test", "pass": "123456" },
+    "git": "https://github.com/danby14/tvFront",
     "image": "./images/predictTV.jpg",
     "description": "Users join leagues and invite friends/foes to see who can best predict how long new TV shows will last.",
-    "tags": ["NodeJS", "Express", "React", "MongoDB"]
+    "tags": ["Node", "Express", "React", "MongoDB"]
   },
   {
     "title": "Gimme Five",
     "slug": "project-2",
     "url": "https://gimme-five.netlify.app/",
+    "guest": { "user": "Test", "pass": "123456" },
+    "git": "https://github.com/danby14/Gimme-Five",
     "image": "./images/GimmeFive.jpg",
     "description": "Users can get help with ideas or decisions, by making lists then submiting them to the community for comments and voting.",
-    "tags": ["NodeJS", "Express", "React", "Postgres"]
+    "tags": ["Node", "Express", "React", "PostgreSQL"]
   },
   {
     "title": "The Initials Game",
     "slug": "project-3",
     "url": "https://ig.danby.me/",
+    "git": "https://github.com/danby14/The-Initials-Game",
     "image": "./images/TheIG.jpg",
     "description": "A game where users are given the initals of a famous person, then have to guess who those initials belong to.",
-    "tags": ["HTML5", "CSS3", "Javascript"]
+    "tags": ["HTML5", "CSS3", "JavaScript"]
   },
   {
     "title": "My Portfolio",
     "slug": "project-4",
     "url": "https://danby.me/",
+    "git": "https://www.github.com",
     "image": "./images/Portfolio.jpg",
-    "description": "A game where users are given the initals of famous people, then have to guess who those initials belong to.",
-    "tags": ["HTML5", "CSS3", "Javascript"]
+    "description": "My portfolio and first attempt at Gatsby. You may have already seen at least part of this one in action.",
+    "tags": ["HTML5", "SASS", "Gatsby"]
   }
 ]
