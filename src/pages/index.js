@@ -67,14 +67,15 @@ const IndexPage = () => {
       <section id="about">
         <Blob>About</Blob>
         <p>
-          Hi! My name is Dan, and I am a self-taught web developer from Chicago,
-          IL.
+          Hello! My name is Dan, and I am a self-taught web developer from
+          Chicago, IL.
         </p>
         <br />
         <p>
           For the better part of my life I have asked myself what I learned
-          today before I go to sleep at night. Because to me, a day without
-          learning, is a day without improving.
+          today before I go to sleep every night. Because to me, a day without
+          learning, is a day that I will never get back and will have to relive
+          over again tomorrow. Learning is what pushes us forward.
         </p>
         <br />
         <SectionImg
