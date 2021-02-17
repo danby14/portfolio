@@ -6,7 +6,11 @@
     "guest": { "user": "Test", "pass": "123456" },
     "git": "https://github.com/danby14/tvFront",
     "image": "./images/predictTV.jpg",
-    "description": "Users join leagues and invite friends/foes to see who can best predict how long new TV shows will last.",
+    "mockup": "./images/tv-mockup.png",
+    "description": "Users join leagues then invite friends/foes to join them and see who can best predict how long new TV shows will last.",
+    "techUsed": "bulma, node, express, mongoose, mongodb atlas, react, react-router, digital ocean, dokku, netlify",
+    "learned": "authentication, authorization, ",
+    "takeaways": "Get an MVP(minimum viable product) into potential users hands to find out the interest in your idea long before you spend way too much of your time designing and optimizing it for nothing.",
     "tags": ["Node", "Express", "React", "MongoDB"]
   },
   {
@@ -16,7 +20,11 @@
     "guest": { "user": "Test", "pass": "123456" },
     "git": "https://github.com/danby14/Gimme-Five",
     "image": "./images/GimmeFive.jpg",
-    "description": "Users can get help with ideas or decisions, by making lists then submiting them to the community for comments and voting.",
+    "mockup": "./images/gimmefive-mockup.png",
+    "description": "Users get help ranking their ideas and decisions by making lists and submiting them to the community for voting, comments, and discussion.",
+    "techUsed": "styled components, node, express, react, ",
+    "learned": "stuff",
+    "takeaways": "yes",
     "tags": ["Node", "Express", "React", "PostgreSQL"]
   },
   {
@@ -25,7 +33,11 @@
     "url": "https://ig.danby.me/",
     "git": "https://github.com/danby14/The-Initials-Game",
     "image": "./images/TheIG.jpg",
-    "description": "A game where users are given the initals of a famous person, then have to guess who those initials belong to.",
+    "mockup": "./images/theig-mockup.png",
+    "description": "Game that gives the initals of a famous person, then the user has to guess who those initials belong to before time runs out.",
+    "techUsed": "html, css, javascript",
+    "learned": "This could be better served as a mobile app and I may use it as my motivation to learn a mobile framework or two",
+    "takeaways": "After building react projects for a few months, my basic javascript and DOM manipulation skills needed some refreshing. If you don't use it, you lose it. Granted, it's easier to pick back up the more times you practice it. So, this was just one of the many refreshers it will take to improve my skills. And what better way to do it, than with a game I randomly play with friends and family.",
     "tags": ["HTML5", "CSS3", "JavaScript"]
   },
   {
@@ -34,7 +46,11 @@
     "url": "https://danby.me/",
     "git": "https://github.com/danby14/portfolio",
     "image": "./images/Portfolio.jpg",
-    "description": "My portfolio and first attempt at Gatsby. You may have already seen at least part of this one in action.",
+    "mockup": "./images/portfolio-mockup.png",
+    "description": "My portfolio and first look at Gatsby. You may have already seen this one in action.",
+    "techUsed": "gatsby, scss, formspree",
+    "learned": "stuff",
+    "takeaways": "yes",
     "tags": ["HTML5", "SASS", "Gatsby"]
   }
 ]

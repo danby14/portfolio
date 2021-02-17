@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa"
 import Logos from "../components/logos"
 import { Blob } from "../assets/blob"
 import SectionImg from "../components/section-img"
+import Contact from "../components/contact"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -72,10 +73,10 @@ const IndexPage = () => {
         </p>
         <br />
         <p>
-          For the better part of my life I have asked myself what I learned
-          today before I go to sleep every night. Because to me, a day without
-          learning, is a day that I will never get back and will have to relive
-          over again tomorrow. Learning is what pushes us forward.
+          Every night before I got to bed, I always ask myself what I have
+          learned that day. Because to me, a day without learning, is a day that
+          I will never get back and a day that I will have to repeat all over
+          again tomorrow. Because learning is what pushes us forward.
         </p>
         <br />
         <SectionImg
@@ -136,12 +137,7 @@ const IndexPage = () => {
 
       <section id="contact">
         <Blob>Contact</Blob>
-        <form action="submit" className="contact-form">
-          <label htmlFor="name">Name</label>
-          <input type="text" />
-          <label htmlFor="email">Email</label>
-          <input type="email" />
-        </form>
+        <Contact />
       </section>
     </Layout>
   )

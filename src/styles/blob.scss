@@ -6,7 +6,7 @@
   max-width: 260px;
   margin: 0 auto;
   svg {
-    fill: var($--section-title);
+    fill: gainsboro;
   }
 
   @media (max-width: $bp-lg) {
