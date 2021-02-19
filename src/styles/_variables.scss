@@ -1,5 +1,6 @@
-$--background-color: --background-color;
 $--main-color: --main-color;
+$--accent-color: --color3;
+$--background-color: --background-color;
 $--color-text-dark: --color-text-dark;
 $--color-text-darker: --color-text-darker;
 $--color-text-light: --color-text-light;
@@ -14,8 +15,9 @@ $bp-md: 800px;
 $bp-lg: 992px;
 
 $theme-map-light: (
-  $--background-color: #ffffff,
   $--main-color: #383870,
+  $--accent-color: #eea725,
+  $--background-color: #ffffff,
   $--color-text-dark: #333,
   $--color-text-darker: #222,
   $--color-text-light: #eee,
@@ -27,8 +29,9 @@ $theme-map-light: (
 );
 
 $theme-map-dark: (
-  $--background-color: black,
   $--main-color: #3c7cb8,
+  $--accent-color: #dfa01f,
+  $--background-color: #111,
   $--color-text-dark: rgb(190, 180, 180),
   $--color-text-darker: rgb(149, 145, 145),
   $--color-text-light: rgb(238, 224, 224),

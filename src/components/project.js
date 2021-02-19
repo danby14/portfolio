@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import Image from "gatsby-image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
-import "../styles/project-preview.scss"
+
+import "../styles/project.scss"
 
 const Project = ({
   title,
@@ -17,36 +17,9 @@ const Project = ({
   imageData,
 }) => (
   <div className="project">
-    <h1>{title}</h1>
     <Image fluid={imageData} alt={title} />
-
-    <div className="more-information">
-      <p className="about">{description}</p>
-      <div className="info-and-date-container">
-        <a
-          href={git}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box code"
-        >
-          <span>
-            <FaGithub size="1.4em" />
-          </span>
-          <p>Code</p>
-        </a>
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="box visit"
-        >
-          <span>
-            <FaGlobe size="1.3em" />
-          </span>
-          {login ? <p>"login.user, login.pass"</p> : <p>Visit</p>}
-        </a>
-      </div>
-    </div>
+    <h1>{title}</h1>
+    <p className="about">{description}</p>
 
     <h3>Made With</h3>
     <p>{tech}</p>
@@ -54,9 +27,40 @@ const Project = ({
     <p>{learned}</p>
     <h3>Takeaways</h3>
     <p>{takeaways}</p>
-    <p>
-      <Link to="/">&larr; back to all projects</Link>
-    </p>
+    <div className="code-and-visit-container">
+      <div>
+        <a
+          href={git}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="box code"
+        >
+          <span className="icon">
+            <FaGithub size="1.4em" />
+          </span>
+          <span>Code</span>
+        </a>
+      </div>
+      <div>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="box visit"
+        >
+          <span className="icon">
+            <FaGlobe size="1.3em" />
+          </span>
+          <span>Visit</span>
+        </a>
+      </div>
+    </div>
+    {login && (
+      <div className="login">
+        <p>"login: {login.user}"</p>
+        <p>"pass: {login.pass}"</p>
+      </div>
+    )}
   </div>
 )
 
