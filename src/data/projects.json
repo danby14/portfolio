@@ -8,9 +8,9 @@
     "image": "./images/predictTV.jpg",
     "mockup": "./images/mockup-tv.png",
     "description": "Users join leagues then invite friends/foes to join them and see who can best predict how long new TV shows will last.",
-    "techUsed": "bulma, node, express, mongoose, mongodb atlas, react, react-router, digital ocean, dokku, netlify",
-    "learned": "authentication, authorization, ",
-    "takeaways": "Get an MVP(minimum viable product) into potential users hands to find out the interest in your idea long before you spend way too much of your time designing and optimizing it for nothing.",
+    "techUsed": "Node, Express, Mongoose, MongoDB Atlas, React, React-Router, Bulma, Digital Ocean, Dokku, Netlify",
+    "learned": "On the broader spectrum, a lot of useful knowledge was gained during the many moons it took to make this project. Learning something exists is half the battle, then you have to figure out how to make it do what you want. This project taught me just how many decisions go into making a full fledged user exerpience from scratch, and then how all those decisions interact with each other. On a more technichal level, some of my main takeaways were setting up my own authentication / authorization, getting a large table of user specific generated data to do what I wanted (while still being somewhat graphically pleasing), and just getting a chance to use and try out all the packages I used to do so many different things (i.e. bcrypt, nodemailer, amazon ses, jwt's, mongoose, react-hook-form, react-player... and the oh so many others that didn't make the cut).",
+    "takeaways": "Get an MVP (minimum viable product) into potential users hands to find out the interest in your project long before you spend way too much of your time designing, developing, and optimizing it for nothing. With that said, a possible future improvement would be to have leagues with short term commitments. Since new users aren't big fans of waiting months/years to see results. Could use something to keep them interested short-term, like weekend box office number predictions or something of that nature.",
     "tags": ["Node", "Express", "React", "MongoDB"]
   },
   {
@@ -21,10 +21,10 @@
     "git": "https://github.com/danby14/Gimme-Five",
     "image": "./images/GimmeFive.jpg",
     "mockup": "./images/mockup-gimmeFive.png",
-    "description": "Users get help ranking their ideas and decisions by making lists and submiting them to the community for voting, comments, and discussion.",
-    "techUsed": "styled components, node, express, react, ",
-    "learned": "stuff",
-    "takeaways": "yes",
+    "description": "Users get help ranking their ideas and decisions by listing up to 5 of them, and then submiting that list to the community for voting, comments, and discussion. Should I wear red shoes or black? This book idea or that one?",
+    "techUsed": "Node, Express, PostgreSQL, neDB, React, Styled Components, Netlify, Digital Ocean, Dokku",
+    "learned": "After working mostly with NoSQL databases recently, it was a nice change of pace to get a relational database up and running, and then see some those data points graphically represented to the user.",
+    "takeaways": "While it has the foundation and pieces needed for a good user experience, the possible added features are endless. It was a nice starting point, but could easily be expanded on in the future with things like image support and a mobile app",
     "tags": ["Node", "Express", "React", "PostgreSQL"]
   },
   {
@@ -34,10 +34,10 @@
     "git": "https://github.com/danby14/The-Initials-Game",
     "image": "./images/TheIG.jpg",
     "mockup": "./images/mockup-theIG.png",
-    "description": "Game that gives the initals of a famous person, then the user has to guess who those initials belong to before time runs out.",
-    "techUsed": "html, css, javascript",
-    "learned": "This could be better served as a mobile app and I may use it as my motivation to learn a mobile framework or two",
-    "takeaways": "After building react projects for a few months, my basic javascript and DOM manipulation skills needed some refreshing. If you don't use it, you lose it. Granted, it's easier to pick back up the more times you practice it. So, this was just one of the many refreshers it will take to improve my skills. And what better way to do it, than with a game I randomly play with friends and family.",
+    "description": "A game that gives the user a category and a set of initals, then the user has to guess who those initials belong to before the timer runs out.",
+    "techUsed": "HTML, CSS, Javascript, Digital Ocean, Dokku",
+    "learned": "After building react projects for a few months, my basic javascript and DOM manipulation skills needed some refreshing. If you don't use it, you lose it. Granted, it's easier to pick back up the more times you practice it. So, this was one of the many refreshers it will take to sharpen my skills. And what better way to do it, than with a game I randomly play with my friends and family.",
+    "takeaways": "This project may be better served as a mobile application, so I may use it as my basis to learn a mobile framework or two",
     "tags": ["HTML5", "CSS3", "JavaScript"]
   },
   {
@@ -48,9 +48,9 @@
     "image": "./images/Portfolio.jpg",
     "mockup": "./images/mockup-portfolio.png",
     "description": "My portfolio and first look at Gatsby. You may have already seen this one in action.",
-    "techUsed": "gatsby, scss, formspree, digital ocean, dokku, nginx",
-    "learned": "stuff",
-    "takeaways": "yes",
+    "techUsed": "HTML, Gatsby, SCSS, FormSpree, Digital Ocean, Dokku",
+    "learned": "This was my first foray into the world of gatsby. Had mostly just used create-react-app up to this point as far as react projects go.",
+    "takeaways": "While to me, Gatsby is a bit more complicated and resource intensive to set up and use than a basic create-react-app, it is well documented and I can definitely see where some of its benefits like responsive image sizes, SEO, and static content stand out.",
     "tags": ["HTML5", "SASS", "Gatsby"]
   }
 ]
