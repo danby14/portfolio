@@ -99,23 +99,21 @@ $orange: #ec992c;
         a {
           border: 3px solid white;
           padding: 10px 15px;
-
           background: none;
+          color: white;
 
           text-transform: uppercase;
           font-weight: bold;
           font-size: 1.3rem;
-          color: white;
           border-radius: 5%;
           text-decoration: none;
 
           cursor: pointer;
 
-          transition: 0.3s;
+          transition: 0.2s;
 
           &:hover {
             background: white;
-
             border: 0px solid white;
 
             color: $blue;
@@ -208,10 +206,8 @@ $orange: #ec992c;
       @include cardsOpen();
     }
   }
-}
 
-@media (max-width: 768px) {
-  ul {
+  @media (max-width: 767px) {
     .project-card {
       @include cardsOpen();
     }

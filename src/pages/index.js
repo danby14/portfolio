@@ -7,6 +7,7 @@ import Logos from "../components/logos"
 import { Blob } from "../assets/blob"
 import SectionImg from "../components/section-img"
 import Contact from "../components/contact"
+import { navigate } from "gatsby"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -55,13 +56,30 @@ const IndexPage = () => {
         </h2>
         <div className="contact">
           <span>
-            <FaEnvelope size="1.4em" />
+            <FaEnvelope
+              size="1.4em"
+              onClick={() => {
+                navigate("/#contact")
+              }}
+            />
           </span>
           <span>
-            <FaGithub size="1.4em" />
+            <a
+              href="https://github.com/danby14"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size="1.4em" />
+            </a>
           </span>
           <span>
-            <FaLinkedinIn size="1.4em" />
+            <a
+              href="https://www.linkedin.com/in/dan-buenger"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn size="1.4em" />
+            </a>
           </span>
         </div>
       </section>
@@ -75,8 +93,8 @@ const IndexPage = () => {
         <p>
           Every night before I got to bed, I always ask myself what I have
           learned that day. Because to me, a day without learning, is a day that
-          I will never get back and a day that I will have to repeat all over
-          again tomorrow. Because learning is what pushes us forward.
+          I will have to repeat all over again tomorrow. Learning is what pushes
+          us forward, and no day is complete without it.
         </p>
         <br />
         <SectionImg
@@ -86,10 +104,9 @@ const IndexPage = () => {
         />
 
         <p>
-          So, when I rediscovered the wide world of web development a few years
-          back, there is no wonder why it has since become an important part of
-          my life. And I am looking forward to the endless treasure trove of
-          knowledge it still has for me to unlock.
+          So when I rediscovered the wide world of web possibilities, there is
+          no wonder why it has stuck with me ever since. And I look forward to
+          the seemingly endless amount of knowledge it has for me to unlock.
         </p>
       </section>
       <section id="skills">

@@ -31,8 +31,11 @@ section {
 
   &:not(:first-child) {
     padding-top: 3.8vh;
-    padding: 3.8vh 24px 0 24px;
     margin-bottom: 9vh;
+
+    @media (min-width: $bp-lg) {
+      padding: 3.8vh 24px 0 24px;
+    }
   }
 
   > h2 {
@@ -85,7 +88,6 @@ section {
 
 .divider {
   height: 0px;
-  // border-top: 2px solid #bda539;
   border-top: 2px solid var($--accent-color);
   margin-bottom: 1.5rem;
   width: 41%;
@@ -109,6 +111,12 @@ section {
     min-width: 160px;
     justify-content: space-between;
     padding-top: 0.75rem;
+
+    span,
+    span a {
+      color: var($--color-text-dark);
+      cursor: pointer;
+    }
   }
 
   position: relative;
