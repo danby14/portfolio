@@ -6,8 +6,10 @@ const Bubbles = () => (
     style={{
       position: "fixed",
       width: "100%",
-      // zIndex: 5,
+      zIndex: -1,
     }}
+    className="bloop"
+    canvasClassName="bloop2"
     params={{
       particles: {
         number: {
