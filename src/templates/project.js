@@ -3,30 +3,27 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Project from "../components/project"
 
-export const query = graphql`
-  query($slug: String!) {
-    projectsJson(slug: { eq: $slug }) {
-      title
-      description
-      techUsed
-      learned
-      takeaways
-      tags
-      git
-      url
-      guest {
-        user
-        pass
-      }
-      mockup {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+export const query = graphql`query ($slug: String!) {
+  projectsJson(slug: {eq: $slug}) {
+    title
+    description
+    techUsed
+    learned
+    takeaways
+    tags
+    git
+    url
+    guest {
+      user
+      pass
+    }
+    mockup {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }
+}
 `
 
 const ProjectTemplate = ({ data }) => {
@@ -40,7 +37,7 @@ const ProjectTemplate = ({ data }) => {
   const git = project.git
   const url = project.url
   const login = project.guest
-  const imageData = project.mockup.childImageSharp.fluid
+  const imageData = project.mockup.childImageSharp.gatsbyImageData
 
   return (
     <Layout>

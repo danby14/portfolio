@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { FaGithub, FaGlobe } from "react-icons/fa"
 import Logos from "./logos"
 import "../styles/project-preview.scss"
 
 const ProjectPreview2 = ({ project, slug, imageData, login = false }) => (
   <li className="project-card">
-    <Image
-      fluid={imageData}
+    <GatsbyImage
+      image={imageData}
       alt={project.title}
       className="img"
       style={{
@@ -17,8 +17,7 @@ const ProjectPreview2 = ({ project, slug, imageData, login = false }) => (
         top: 0,
         width: "100%",
         height: "100%",
-      }}
-    />
+      }} />
     <div className="main-link-container">
       <div className="content">
         <Link to={`/${slug}`}>Deeper Dive</Link>

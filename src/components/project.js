@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
 
 import "../styles/project.scss"
@@ -17,7 +17,7 @@ const Project = ({
   imageData,
 }) => (
   <div className="project">
-    <Image fluid={imageData} alt={title} />
+    <GatsbyImage image={imageData} alt={title} />
     <h1>{title}</h1>
     <p className="about">{description}</p>
 

@@ -17,4 +17,5 @@ const Provider = (props) => {
   )
 }
 
-export default ({ element }) => <Provider>{element}</Provider>
+const providerFunction = ({ element }) => <Provider>{element}</Provider>
+export default providerFunction

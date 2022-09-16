@@ -1,13 +1,14 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Layout from "../components/layout"
-import ProjectPreview from "../components/project-preview"
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa"
-import Logos from "../components/logos"
-import { Blob } from "../assets/blob"
-import SectionImg from "../components/section-img"
-import Contact from "../components/contact"
+import { graphql, useStaticQuery } from "gatsby"
 import { navigate } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+
+import { Blob } from "../assets/blob"
+import Contact from "../components/contact"
+import Layout from "../components/layout"
+import Logos from "../components/logos"
+import ProjectPreview from "../components/project-preview"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -27,9 +28,7 @@ const IndexPage = () => {
             tags
             image {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
           }
@@ -97,11 +96,12 @@ const IndexPage = () => {
           us forward, and no day is complete without it.
         </p>
         <br />
-        <SectionImg
-          imgName="LightBulbs.png"
-          alt="Light Bulbs via https://absurd.design/"
-          top
-        />
+        <div className="section-img-container top">
+          <StaticImage
+            src="../data/images/LightBulbs.png"
+            alt="Light Bulbs via https://absurd.design/"
+          />
+        </div>
 
         <p>
           So when I rediscovered the wide world of web possibilities, there is
@@ -126,16 +126,18 @@ const IndexPage = () => {
             "MongoDB",
           ]}
         />
-        <SectionImg
-          imgName="Learning.png"
-          alt="Big Floating Head via https://absurd.design/"
-        />
+        <div className="section-img-container bottom">
+          <StaticImage
+            src="../data/images/Learning.png"
+            alt="Big Floating Head via https://absurd.design/"
+          />
+        </div>
       </section>
       <section id="projects">
         <Blob>Projects</Blob>
         <ul className="project-previews-container">
           {projects.map(({ node: project }) => {
-            const imageData = project.image.childImageSharp.fluid
+            const imageData = project.image.childImageSharp.gatsbyImageData
             const slug = project.slug
             const login = project.guest
 
