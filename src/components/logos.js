@@ -5,6 +5,7 @@ import {
   Html5Icon,
   Css3Icon,
   SassIcon,
+  TailwindCSSIcon,
   JavascriptIcon,
   NodeIcon,
   ExpressIcon,
@@ -12,6 +13,8 @@ import {
   GatsbyIcon,
   PostgresIcon,
   MongoIcon,
+  NextIcon,
+  SupabaseIcon,
 } from "../assets/icons.js"
 
 import "../styles/logos.scss"
@@ -22,12 +25,15 @@ const Logos = ({ logos, small }) => {
     HTML5: <Html5Icon />,
     CSS3: <Css3Icon />,
     SASS: <SassIcon />,
+    tailwindcss: <TailwindCSSIcon />,
     JavaScript: <JavascriptIcon />,
     Node: <NodeIcon />,
     Express: <ExpressIcon />,
     React: <ReactIcon />,
+    "Next.js": <NextIcon />,
     Gatsby: <GatsbyIcon />,
     PostgreSQL: <PostgresIcon />,
+    Supabase: <SupabaseIcon />,
     MongoDB: <MongoIcon />,
   }
   return (

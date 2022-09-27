@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 import { FaGithub, FaGlobe } from "react-icons/fa"
 import Logos from "./logos"
 import "../styles/project-preview.scss"
@@ -16,8 +16,9 @@ const ProjectPreview2 = ({ project, slug, imageData, login = false }) => (
         left: 0,
         top: 0,
         width: "100%",
-        height: "100%",
-      }} />
+        height: "60%",
+      }}
+    />
     <div className="main-link-container">
       <div className="content">
         <Link to={`/${slug}`}>Deeper Dive</Link>

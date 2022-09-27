@@ -99,8 +99,10 @@ $orange: #ec992c;
         a {
           border: 3px solid white;
           padding: 10px 15px;
-          background: none;
-          color: white;
+          // background: none;
+          // color: white;
+          background: white;
+          color: $blue;
 
           text-transform: uppercase;
           font-weight: bold;
@@ -114,7 +116,8 @@ $orange: #ec992c;
 
           &:hover {
             background: white;
-            border: 0px solid white;
+            // border: 0px solid $blue;
+            border: 3px solid $blue;
 
             color: $blue;
           }

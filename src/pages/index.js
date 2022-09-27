@@ -117,12 +117,15 @@ const IndexPage = () => {
             "HTML5",
             "CSS3",
             "SASS",
+            "tailwindcss",
             "JavaScript",
             "Node",
             "Express",
             "React",
+            "Next.js",
             "Gatsby",
             "PostgreSQL",
+            "Supabase",
             "MongoDB",
           ]}
         />
